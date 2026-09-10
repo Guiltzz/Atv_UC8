@@ -61,17 +61,7 @@ Repositório criado para registrar estudos e aprendizados em **Java**, utilizand
 * **Parâmetros**
 * **Argumentos**
 
-## 🔹 Programação Orientada a Objetos (POO)
 
-* `class`
-* `new`
-* `this`
-* `extends`
-* `super`
-* `@Override`
-* **Constructor**
-* **Getters**
-* **Setters**
 
 ## 🔹 Coleções
 
@@ -82,13 +72,7 @@ Repositório criado para registrar estudos e aprendizados em **Java**, utilizand
 * `size()`
 * `clear()`
 
-## 🔹 Tratamento de Erros
 
-* `try`
-* `catch`
-* `finally`
-* `throw`
-* `throws`
 
 ## 🔹 Interface Gráfica — Swing
 
