@@ -109,7 +109,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Escolha o lugar onde deseja se sentar:");
 
-        spColuna.setModel(new javax.swing.SpinnerNumberModel(1, 1, 2, 1));
+        spColuna.setModel(new javax.swing.SpinnerNumberModel(1, 1, 4, 1));
         spColuna.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha o número da coluna", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.ABOVE_TOP, new java.awt.Font("Segoe UI", 0, 14), new java.awt.Color(255, 255, 255))); // NOI18N
 
         spLinha.setModel(new javax.swing.SpinnerNumberModel(1, 1, 4, 1));
@@ -164,13 +164,13 @@ public class frmPrincipal extends javax.swing.JFrame {
         tabAssentos.setForeground(new java.awt.Color(255, 255, 255));
         tabAssentos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Livre", "Livre"},
-                {"Livre", "Livre"},
-                {"Livre", "Livre"},
-                {"Livre", "Livre"}
+                {"Livre", "Livre", "Livre", "Livre"},
+                {"Livre", "Livre", "Livre", "Livre"},
+                {"Livre", "Livre", "Livre", "Livre"},
+                {"Livre", "Livre", "Livre", "Livre"}
             },
             new String [] {
-                "Coluna 1", "Coluna 2"
+                "Coluna 1", "Coluna 2", "Coluna 3", "Coluna 4"
             }
         ));
         tabAssentos.setGridColor(new java.awt.Color(51, 51, 51));
@@ -189,18 +189,21 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 632, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnVoltar)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 544, Short.MAX_VALUE)
+                        .addComponent(btnVoltar))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 56, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(0, 83, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
                 .addComponent(btnVoltar)
                 .addGap(20, 20, 20))
         );
